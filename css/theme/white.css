@@ -67,7 +67,9 @@ body {
   font-size: 1em; }
 
 .reveal h1 {
-  text-shadow: none; }
+  text-shadow: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; }
 
 /*********************************************
  * OTHER

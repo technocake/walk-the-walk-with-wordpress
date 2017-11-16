@@ -65,6 +65,8 @@ body {
 
 .reveal h1 {
 	text-shadow: $heading1TextShadow;
+	 -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
 }
 
 

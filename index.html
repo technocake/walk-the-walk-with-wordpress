@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,142 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section> 
+				
+
+					
+					<h1>Walk the Walk with Wordpress</h1>
+
+					<p>
+						<small>Created by <a href="http://technocake.xyz">Robin Garen Aaberg</a> / <a href="http://twitter.com/technocake">@technocake</a></small>
+					</p>
+					<img src="https://www.gravatar.com/avatar/5945f75a8509a4d1c8f2f4e32c74c18d?s=200"
+						 style="margin: 0; border:none; box-shadow: 2px 2px 5px black;">
+					
+				</section>
+
+				<section data-background="https://farm4.staticflickr.com/3737/11465079194_9963e901ce_o_d.jpg">
+					
+					 <audio controls>
+
+  <source src="https://technocake.xyz/music/NeoN-theme.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio> 
+				</section>
+
+				<section><img src="http://chessandcoffee.co/wordpress/wp-content/uploads/2017/03/4919659112_70f8836dfa.jpg"></section>
+				
+				<section><h3>Let's do this.</h3></section>
+				<section>
+				<a href="wordpress.com" target="blank"><h2>Wordpress.com</h2></a>
+				<a href="wordpress.org" target="blank"><h2>Wordpress.org</h2></a>
+
+				</section>
+
+				<section>
+
+					<section>
+					<h2>Components of Wordpress</h2>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Componentes.JPG">
+					</section>
+					
+
+					<section>
+							<h3>functions.php</h3>
+					<img src="http://tdagroup.com/wp2015/wp-content/uploads/2015/04/4_components_of_an_effective_success_story1.jpg"></section>
+				</section>
+
+
+				
+
+				<section>
+					<section>
+						<h2>WP-CLI</h2>
+						<a href="https://make.wordpress.org/cli/handbook/installing/">install wp-cli</a>
+					</section>
+				
+					<section>
+						<h2>WP-CLI : download wordpress</h2>
+
+						<a href="https://developer.wordpress.org/cli/commands/">wp cli Commands</a>
+
+						<pre><code>wp core download</code></pre>
+					</section>
+
+
+					<section>
+						<h2>WP-CLI : create config</h2>
+
+						<a href="https://developer.wordpress.org/cli/commands/">wp cli Commands</a>
+
+						<pre><code>
+wp core config --dbname=walk_technocake_xyz \
+ 	--dbuser=walk --dbpass=talk --dbhost=localhost --dbprefix=walk_</code></pre>
+					</section>
+
+					<section>
+						<h2>WP-CLI : install wordpress</h2>
+
+						<a href="https://developer.wordpress.org/cli/commands/">wp cli Commands</a>
+
+						<pre><code>
+wp core install --url="https://walk.technocake.xyz" --title="Walk the Walk with Wordpress" \
+	--siteurl="https://walk.technocake.xyz" \
+	--admin_user="walkadmin" --admin_password="talk" \
+	--admin_email="robin.aaberg@knowit.no"
+</code></pre>
+					</section>
+					
+					<section>
+						<h2>inspect some params</h2>
+						<pre><code>
+wp option get siteurl
+						</code></pre>
+
+					</section>
+
+					<section>
+						<h2>inspect some params</h2>
+						<pre><code>
+wp option set siteurl http://tjuvholmen.kyber.land
+						</code></pre>
+
+					</section>					
+
+
+					<a href="https://www.linode.com/docs/websites/cms/install-wordpress-using-wp-cli-on-ubuntu-14-04">using wp-cli to setup wordpress</a>
+
+				</section>
+
+				<section>
+					<h2>Wordpress Themes</h2>
+					<section><a href="https://yoast.com/wordpress-theme-anatomy/">Anatomy of Wordpress</a>
+					<img src="http://www.handimania.com/uploads/mix-and-match-blocks-03.jpg">
+
+					</section>
+					<section><a href="https://underscores.me/">underscores</a></section>
+					<section>
+						<pre><code class="hlcss" data-trim contenteditable>/*
+Theme Name: Jostein Stalheim.no
+Theme URI: https://josteinstalheim.no
+Author: Robin Garen Aaberg
+Author URI: https://technocake.xyz
+Description: Composer, Performer and Teacher Jostein Stalheims webpage.
+Version: 0.1
+License: Copyrighted, RGA
+License URI: http://technocake.xyz
+Tags: typography stylistic, simplistic.
+Text Domain: josteinstalheim.no
+*/
+
+
+</code></pre>
+
+					</section>
+
+				</section>
+
+				<section>Wordpress Plugins</section>
 			</div>
 		</div>
 
@@ -42,7 +176,13 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+
+				width: "100%",
+				height: "100%",
+				margin: 0,
+				minScale: 1,
+				maxScale: 1
 			});
 		</script>
 	</body>

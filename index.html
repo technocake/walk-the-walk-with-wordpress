@@ -124,7 +124,20 @@ wp option get siteurl
 wp option set siteurl http://tjuvholmen.kyber.land
 						</code></pre>
 
-					</section>					
+					</section>		
+
+
+					<section>
+						<h2>Change site-url:</h2>
+						<pre><code>
+wp option set siteurl http://dev.bergengamejam.org
+wp search-replace http://bergengamejam.org http://dev.bergengamejam.org --dry-run
+
+						</code></pre>
+
+					</section>		
+
+			
 
 
 					<a href="https://www.linode.com/docs/websites/cms/install-wordpress-using-wp-cli-on-ubuntu-14-04">using wp-cli to setup wordpress</a>
